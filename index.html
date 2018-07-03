@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	
+		<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<style type="text/css">
+			.big_box{
+				max-width: 600px;
+				margin: 0 auto;
+			}
+			
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="big_box">
+			<h2>欢迎登录</h2>
+		<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">用户名</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">密码</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="button" class="btn btn-warning btn-lg btn-block">登录</button>
+  
+  
+  <div class="modal fade" tabindex="-1" role="dialog" id="myModal" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+</form>
+</div>
+<script src="js/jquery.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+	var $username=$("#username")
+	var $password=$("#password")
+	var $btn=$(".btn")
+	$btn.click(function(){
+		$('#myModal').modal('show')
+	})
+		/*var params={
+			username: $('#wq-name'),
+			score:$(#)
+		}
+	})*/
+	
+	
+</script>
+	</body>
+	
+</html>
+
